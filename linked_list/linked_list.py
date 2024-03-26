@@ -53,7 +53,7 @@ class LinkedList:
 
     def delete_at(self, index):
         if index < 0 or index > self.count:
-            raise Exception('Index out of range')
+            raise IndexError('Index out of range')
 
         if index == 0:
             deleted_node = self.head
